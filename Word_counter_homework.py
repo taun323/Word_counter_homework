@@ -5,9 +5,8 @@ def punctuation_remover(text):
         text = text.replace(character, "")
     return text
 
-#this function splits the string, and it adds the words to the list
+#this function splits the string, and it adds only the different words to the list
 #the input of this function is the result of the previous function
-
 def word_counter(text):
     for word in text.split():
         if word not in words:
